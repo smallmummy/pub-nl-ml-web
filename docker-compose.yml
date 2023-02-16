@@ -1,0 +1,13 @@
+version: '3'
+services:
+  cnn:
+    build: .
+    ports:
+     - 5000:5000
+     - 80:80
+     - 443:443
+     - 9000:9000
+    # volumes:
+    #   - .:/cnn_web
+    #   - ./ali_transcribe_front/tmp_upload_files:/sst/ali_transcribe_front/tmp_upload_files
+    #   - ./ali_transcribe_front/transcript_saved:/sst/ali_transcribe_front/transcript_saved
